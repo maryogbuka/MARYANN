@@ -7,7 +7,7 @@ const projects = [
   {
     title: "Ozis : Nigerian Food Ordering Platform",
     description: "A comprehensive restaurant management and food ordering platform built for Nigerian restaurants. Features full payment integration, admin analytics, and customer review systems to help restaurant owners grow their business.",
-    tech: ["Next.js", "Tailwind CSS", "Framer Motion", "Space Stack Payments", "Admin Dashboard"],
+    tech: ["Next.js", "Tailwind CSS", "Framer Motion", "PayStack Payments", "Admin Dashboard"],
     image: "/ozis.png",
     liveLink: "https://ozis.vercel.app",
     github: "https://github.com/maryogbuka/restaurant",
