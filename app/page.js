@@ -11,7 +11,7 @@ export default function HomePage() {
   return (
     <PageTransition>
       <Image
-        src="/maryann.jpg"
+        src="/maryann.png"
         alt="Background Image"
         className="fixed top-0 left-0  w-full h-full object-cover -z-10 opacity-20"
         layout="fill"

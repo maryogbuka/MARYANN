@@ -8,8 +8,8 @@ import { motion } from "framer-motion";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "My Portfolio",
-  description: "Elegant frontend developer portfolio with flowing design",
+  title: "CHUKWUNOMSO",
+  description: "GETTING TO KNOW MARYANN OGBUKA",
 };
 
 export default function RootLayout({ children }) {
