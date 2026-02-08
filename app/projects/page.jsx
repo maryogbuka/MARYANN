@@ -9,7 +9,7 @@ const projects = [
     description: "A comprehensive restaurant management and food ordering platform built for Nigerian restaurants. Features full payment integration, admin analytics, and customer review systems to help restaurant owners grow their business.",
     tech: ["Next.js", "Tailwind CSS", "Framer Motion", "PayStack Payments", "Admin Dashboard"],
     image: "/ozis.png",
-    liveLink: "https://ozis.vercel.app",
+    liveLink: "https://foodmill.vercel.app",
     github: "https://github.com/maryogbuka/restaurant",
     features: [
       "Multi-payment integration (Card, USSD, Bank Transfer)",
@@ -52,6 +52,51 @@ const projects = [
     ],
     role: "Full-stack Developer"
   },
+
+  {
+  title: "Still Living – Fashion E-commerce Platform",
+  description: "A modern fashion e-commerce platform built for the Still Living brand. Enables customers to browse collections, place orders, make secure online payments, and track purchases using a unified payment reference system.",
+  tech: ["Next.js", "Tailwind CSS", "JavaScript", "React", "MongoDB", "Paystack", "Flutterwave"],
+  image: "/ozybrand.png",
+  liveLink: "https://ozybrand.vercel.app",
+  github: "https://github.com/maryogbuka/brand",
+  features: [
+    "Product collections and catalog display",
+    "Secure online payments (Paystack & Flutterwave)",
+    "Unified payment reference system",
+    "Order creation and tracking",
+    "Payment verification and webhooks",
+    "Mobile-responsive fashion storefront"
+  ],
+  role: "Full-stack Developer"
+},
+
+
+{
+  title: "Jesus Club Tour – Event Ticketing Platform",
+  description: "A modern event ticketing platform built for the Jesus Club Tour. Allows users to view events, select ticket tiers, register for free or paid tickets, and complete secure online payments with automated ticket issuance.",
+  tech: [
+    "Next.js",
+    "Tailwind CSS",
+    "JavaScript",
+    "React",
+    "Paystack",
+    "Node.js"
+  ],
+  image: "/clubtour.png",
+  liveLink: "https://lloydconcert.vercel.app",
+  github: "https://github.com/maryogbuka/ConcertTicket",
+  features: [
+    "Event listing and ticket tier display",
+    "Free and paid ticket handling",
+    "Secure online payments via Paystack",
+    "Cart-based ticket selection",
+    "Customer information capture at checkout",
+    "Automated ticket creation after payment",
+    "Mobile-responsive event experience"
+  ],
+  role: "Full-stack Developer"
+},
 ];
 
 export default function ProjectsPage() {
@@ -210,7 +255,7 @@ export default function ProjectsPage() {
               Start a Project
             </motion.a>
             <motion.a
-              href="https://ozis.vercel.app"
+              href="https://foodmill.vercel.app"
               target="_blank"
               rel="noopener noreferrer"
               whileHover={{ scale: 1.05 }}
