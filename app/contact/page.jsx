@@ -332,7 +332,7 @@ export default function ContactPage() {
             <h3 className="text-lg font-semibold mb-2 text-[#7ee7f9]">LinkedIn</h3>
             <p className="text-gray-300 text-sm mb-4">Professional network</p>
             <a 
-              href="https://linkedin.com/in/annie-o-b59966185" 
+              href="https://linkedin.com/in/maryann-o-b59966185"
               target="_blank"
               rel="noopener noreferrer"
               className="text-white hover:text-[#7ee7f9] transition-colors"
