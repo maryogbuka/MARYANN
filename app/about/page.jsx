@@ -15,7 +15,7 @@ export default function AboutPage() {
           className="text-center mb-20"
         >
           <h1 className="text-5xl md:text-7xl font-bold mb-6">
-            <span className="text-[#7ee7f9]">Full Stack Developer & Systems Strategist</span>
+            <span className="text-[#7ee7f9]">Front-end Developer & Systems Strategist</span>
           </h1>
           <p className="text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto">
             I help businesses <span className="text-[#7ee7f9]">avoid fragile systems</span> by building websites and applications that are 
