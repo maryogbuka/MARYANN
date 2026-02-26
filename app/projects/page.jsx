@@ -5,185 +5,205 @@ import { motion } from "framer-motion";
 
 const projects = [
   {
-    title: "Ozis : Nigerian Food Ordering Platform",
-    description: "A comprehensive restaurant management and food ordering platform built for Nigerian restaurants. Features full payment integration, admin analytics, and customer review systems to help restaurant owners grow their business.",
-    tech: ["Next.js", "Tailwind CSS", "Framer Motion", "PayStack Payments", "Admin Dashboard"],
+    title: "Ozis – Nigerian Food Ordering & Restaurant Management Platform",
+    description:
+      "A full-scale food ordering and restaurant management system built to help Nigerian restaurants accept payments, manage orders, track sales performance, and gain insight into customer preferences through analytics.",
+    tech: [
+      "Next.js",
+      "Tailwind CSS",
+      "Framer Motion",
+      "Paystack",
+      "Admin Dashboard"
+    ],
     image: "/ozis.png",
     liveLink: "https://foodmill.vercel.app",
     github: "https://github.com/maryogbuka/restaurant",
     features: [
-      "Multi-payment integration (Card, USSD, Bank Transfer)",
-      "Restaurant admin portal for sales tracking",
-      "Customer review and rating system",
-      "Real-time order management",
-      "Most popular foods analytics"
+      "Multi-payment support (Card, USSD, Bank Transfer)",
+      "Restaurant admin dashboard with sales analytics",
+      "Customer reviews and ratings system",
+      "Real-time order processing",
+      "Most-ordered meals and performance insights"
     ],
-    role: "Full-stack Developer & UI/UX Designer"
+    role: "Full Stack Developer & UI Systems Designer"
   },
   {
-    title: "Modern Standard Insurance Brokers",
-    description: "Official website for Modern Standard Insurance Brokers, a Nigerian insurance company. Built with modern design principles and integrated email systems for client communication and lead generation.",
-    tech: ["React", "Next.js", "JavaScript", "Resend API", "Tailwind CSS"],
+    title: "Modern Standard Insurance Brokers – Corporate Website",
+    description:
+      "A professional corporate website built for an insurance brokerage firm to clearly present services, improve credibility, and streamline client inquiries through structured communication channels.",
+    tech: [
+      "Next.js",
+      "React",
+      "JavaScript",
+      "Tailwind CSS",
+      "Resend API"
+    ],
     image: "/msib.png",
     liveLink: "https://msibltd.com",
     github: "https://github.com/maryogbuka/msib",
     features: [
-      "Professional insurance service presentation",
-      "Email integration with Resend API",
-      "Responsive design for all devices",
-      "Service coverage information",
-      "Client inquiry forms"
+      "Clear service presentation for insurance offerings",
+      "Email automation for client inquiries",
+      "Responsive design across devices",
+      "Lead capture and inquiry forms",
+      "Professional brand presentation"
     ],
     role: "Frontend Developer"
   },
   {
-    title: "POS Application System",
-    description: "A complete POS application form system for a payment solutions company. Enables customers to request POS terminals with automated PDF generation and email integration for streamlined processing.",
-    tech: ["Next.js", "Tailwind CSS", "JavaScript", "React", "PDF Generation"],
+    title: "POS Application & Deployment System",
+    description:
+      "A custom POS application and onboarding system built for a payment solutions company to simplify terminal requests, automate documentation, and streamline internal processing.",
+    tech: [
+      "Next.js",
+      "React",
+      "Tailwind CSS",
+      "JavaScript",
+      "PDF Generation"
+    ],
     image: "/pos.png",
     liveLink: "https://oliveposforms.vercel.app",
     github: "https://github.com/maryogbuka/pos_deployment_form",
     features: [
-      "Dynamic POS application forms",
-      "Automated PDF generation",
-      "Email integration for submissions",
-      "Form validation and data processing",
-      "Mobile-responsive design"
+      "Dynamic POS request forms",
+      "Automated PDF document generation",
+      "Email delivery of submissions",
+      "Client data validation and processing",
+      "Mobile-friendly interface"
     ],
-    role: "Full-stack Developer"
+    role: "Full Stack Developer"
   },
-
   {
-  title: "Still Living – Fashion E-commerce Platform",
-  description: "A modern fashion e-commerce platform built for the Still Living brand. Enables customers to browse collections, place orders, make secure online payments, and track purchases using a unified payment reference system.",
-  tech: ["Next.js", "Tailwind CSS", "JavaScript", "React", "MongoDB", "Paystack", "Flutterwave"],
-  image: "/ozybrand.png",
-  liveLink: "https://ozybrand.vercel.app",
-  github: "https://github.com/maryogbuka/brand",
-  features: [
-    "Product collections and catalog display",
-    "Secure online payments (Paystack & Flutterwave)",
-    "Unified payment reference system",
-    "Order creation and tracking",
-    "Payment verification and webhooks",
-    "Mobile-responsive fashion storefront"
-  ],
-  role: "Full-stack Developer"
-},
-
-
-{
-  title: "Jesus Club Tour – Event Ticketing Platform",
-  description: "A modern event ticketing platform built for the Jesus Club Tour. Allows users to view events, select ticket tiers, register for free or paid tickets, and complete secure online payments with automated ticket issuance.",
-  tech: [
-    "Next.js",
-    "Tailwind CSS",
-    "JavaScript",
-    "React",
-    "Paystack",
-    "Node.js"
-  ],
-  image: "/clubtour.png",
-  liveLink: "https://lloydconcert.vercel.app",
-  github: "https://github.com/maryogbuka/ConcertTicket",
-  features: [
-    "Event listing and ticket tier display",
-    "Free and paid ticket handling",
-    "Secure online payments via Paystack",
-    "Cart-based ticket selection",
-    "Customer information capture at checkout",
-    "Automated ticket creation after payment",
-    "Mobile-responsive event experience"
-  ],
-  role: "Full-stack Developer"
-},
+    title: "Still Living – Fashion E-Commerce Platform",
+    description:
+      "A modern fashion e-commerce platform designed to help a growing brand sell products online, accept secure payments, manage orders, and track transactions using a unified reference system.",
+    tech: [
+      "Next.js",
+      "React",
+      "Tailwind CSS",
+      "MongoDB",
+      "Paystack",
+      "Flutterwave"
+    ],
+    image: "/ozybrand.png",
+    liveLink: "https://ozybrand.vercel.app",
+    github: "https://github.com/maryogbuka/brand",
+    features: [
+      "Product catalog and collections display",
+      "Secure payments via Paystack and Flutterwave",
+      "Unified payment reference tracking",
+      "Order creation and verification",
+      "Mobile-optimized storefront"
+    ],
+    role: "Full Stack Developer"
+  },
+  {
+    title: "Jesus Club Tour – Event Ticketing Platform",
+    description:
+      "A complete event ticketing platform built to manage free and paid event registrations, ticket tiers, and secure online payments with automated ticket issuance.",
+    tech: [
+      "Next.js",
+      "React",
+      "Tailwind CSS",
+      "JavaScript",
+      "Paystack",
+      "Node.js"
+    ],
+    image: "/clubtour.png",
+    liveLink: "https://lloydconcert.vercel.app",
+    github: "https://github.com/maryogbuka/ConcertTicket",
+    features: [
+      "Event listings and ticket tiers",
+      "Free and paid ticket workflows",
+      "Secure online payments",
+      "Cart-based ticket selection",
+      "Automated ticket generation after payment"
+    ],
+    role: "Full Stack Developer"
+  }
 ];
 
 export default function ProjectsPage() {
   return (
     <PageTransition>
-      <section className="min-h-screen px-6 py-12 max-w-7xl mx-auto">
-        {/* Hero Section */}
+      <section className="min-h-screen px-6 py-14 max-w-7xl mx-auto">
+
+        {/* ---------- HERO ---------- */}
         <motion.div
-          className="text-center mb-16"
+          className="text-center mb-20"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
           <h1 className="text-5xl md:text-7xl font-bold mb-6">
-            Real <span className="text-[#7ee7f9]">Projects</span>
+            Selected <span className="text-[#7ee7f9]">Projects</span>
           </h1>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
-            Here are the actual projects I&apos;ve built and deployed. Each one solves 
-            <span className="text-[#7ee7f9]"> real business problems</span> with 
-            <span className="text-[#7ee7f9]"> practical, scalable solutions</span>.
+            These are real, deployed systems built to solve real business
+            challenges — from payments and automation to scalability and user
+            experience.
           </p>
         </motion.div>
 
-        {/* Projects Grid */}
-        <div className="space-y-20">
+        {/* ---------- PROJECTS ---------- */}
+        <div className="space-y-24">
           {projects.map((project, index) => (
             <motion.div
               key={project.title}
               initial={{ opacity: 0, y: 50 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: index * 0.2 }}
+              transition={{ duration: 0.8, delay: index * 0.15 }}
               className={`flex flex-col ${
-                index % 2 === 0 ? 'lg:flex-row' : 'lg:flex-row-reverse'
-              } gap-8 items-center justify-between`}
+                index % 2 === 0 ? "lg:flex-row" : "lg:flex-row-reverse"
+              } gap-10 items-center`}
             >
-              {/* Project Image */}
-              <div className="flex-1 group">
-                <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-gray-700">
+              {/* Image */}
+              <div className="flex-1">
+                <div className="relative rounded-2xl overflow-hidden border border-gray-700 shadow-xl">
                   <Image
                     src={project.image}
                     alt={project.title}
                     width={600}
                     height={400}
-                    className="w-full h-auto transform group-hover:scale-105 transition-transform duration-500"
+                    className="w-full h-auto"
                   />
-                  <div className="absolute inset-0 bg-linear-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
-                    <div className="p-6 text-white">
-                      <div className="text-sm font-semibold text-[#7ee7f9] mb-2">
-                        {project.role}
-                      </div>
-                    </div>
+                  <div className="absolute bottom-4 left-4 bg-black/60 px-4 py-2 rounded-full text-sm text-[#7ee7f9]">
+                    {project.role}
                   </div>
                 </div>
               </div>
 
-              {/* Project Content */}
+              {/* Content */}
               <div className="flex-1 space-y-6">
-                <div>
-                  <h3 className="text-3xl md:text-4xl font-bold text-white mb-3">
-                    {project.title}
-                  </h3>
-                  <p className="text-gray-300 text-lg leading-relaxed">
-                    {project.description}
-                  </p>
-                </div>
+                <h3 className="text-3xl md:text-4xl font-bold text-white">
+                  {project.title}
+                </h3>
 
-                {/* Role Badge */}
-                <div className="inline-block bg-[#7ee7f9]/10 border border-[#7ee7f9]/30 text-[#7ee7f9] px-4 py-2 rounded-full text-sm font-medium">
-                  {project.role}
-                </div>
+                <p className="text-gray-300 text-lg leading-relaxed">
+                  {project.description}
+                </p>
 
-                {/* Features List */}
                 <div>
-                  <h4 className="text-lg font-semibold text-[#7ee7f9] mb-3">Key Features</h4>
+                  <h4 className="text-[#7ee7f9] font-semibold mb-3">
+                    Core Capabilities
+                  </h4>
                   <ul className="space-y-2">
                     {project.features.map((feature, i) => (
-                      <li key={i} className="flex items-start gap-3 text-gray-300">
-                        <div className="w-2 h-2 bg-[#7ee7f9] rounded-full mt-2 shrink-0" />
+                      <li
+                        key={i}
+                        className="flex items-start gap-3 text-gray-300"
+                      >
+                        <span className="w-2 h-2 bg-[#7ee7f9] rounded-full mt-2" />
                         <span className="text-sm">{feature}</span>
                       </li>
                     ))}
                   </ul>
                 </div>
 
-                {/* Technologies */}
                 <div>
-                  <h4 className="text-lg font-semibold text-[#7ee7f9] mb-3">Technologies Used</h4>
+                  <h4 className="text-[#7ee7f9] font-semibold mb-3">
+                    Technology Stack
+                  </h4>
                   <div className="flex flex-wrap gap-2">
                     {project.tech.map((tech) => (
                       <span
@@ -196,33 +216,24 @@ export default function ProjectsPage() {
                   </div>
                 </div>
 
-                {/* Action Buttons */}
                 <div className="flex gap-4 pt-4">
                   <motion.a
                     href={project.liveLink}
                     target="_blank"
-                    rel="noopener noreferrer"
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
-                    className="flex items-center justify-center gap-2 flex-1 bg-[#7ee7f9] text-gray-900 font-semibold px-6 py-3 rounded-lg hover:bg-[#68d8eb] transition-colors"
+                    className="flex-1 bg-[#7ee7f9] text-gray-900 font-semibold px-6 py-3 rounded-lg text-center"
                   >
-                    <span>View Live Site</span>
-                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                    </svg>
+                    View Live System
                   </motion.a>
                   <motion.a
                     href={project.github}
                     target="_blank"
-                    rel="noopener noreferrer"
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
-                    className="flex items-center justify-center gap-2 flex-1 bg-transparent border border-[#7ee7f9] text-[#7ee7f9] font-semibold px-6 py-3 rounded-lg hover:bg-[#7ee7f9]/10 transition-colors"
+                    className="flex-1 border border-[#7ee7f9] text-[#7ee7f9] font-semibold px-6 py-3 rounded-lg text-center"
                   >
-                    <span>View Code</span>
-                    <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
-                      <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-                    </svg>
+                    View Code
                   </motion.a>
                 </div>
               </div>
@@ -230,42 +241,31 @@ export default function ProjectsPage() {
           ))}
         </div>
 
-        {/* Call to Action */}
+        {/* ---------- CTA ---------- */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.8, duration: 0.8 }}
-          className="text-center mt-20 p-8 bg-[#0e1821] rounded-2xl border border-gray-800"
+          className="text-center mt-24 p-10 bg-[#0e1821] rounded-2xl border border-gray-800"
         >
           <h3 className="text-2xl md:text-3xl font-bold mb-4 text-white">
-            Ready to Build Something Amazing?
+            Let’s Build Something That Works
           </h3>
-          <p className="text-gray-300 mb-6 max-w-2xl mx-auto">
-            Whether you need a complete business platform like Ozis Food, a professional company website, 
-            or custom application forms, I can help bring your vision to life with practical, 
-            business-focused solutions.
+          <p className="text-gray-300 max-w-2xl mx-auto mb-6">
+            If you’re looking to build a reliable web platform  whether it’s
+            e-commerce, internal systems, or customer-facing applications
+            we can design and build a solution that fits your business goals.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <motion.a
-              href="/contact"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              className="bg-[#7ee7f9] text-gray-900 font-semibold px-8 py-3 rounded-lg hover:bg-[#68d8eb] transition-colors"
-            >
-              Start a Project
-            </motion.a>
-            <motion.a
-              href="https://foodmill.vercel.app"
-              target="_blank"
-              rel="noopener noreferrer"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              className="bg-transparent border border-[#7ee7f9] text-[#7ee7f9] font-semibold px-8 py-3 rounded-lg hover:bg-[#7ee7f9]/10 transition-colors"
-            >
-              See Ozis in Action
-            </motion.a>
-          </div>
+          <motion.a
+            href="/contact"
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+            className="inline-block bg-[#7ee7f9] text-gray-900 font-semibold px-10 py-4 rounded-full"
+          >
+            Start a Project Conversation →
+          </motion.a>
         </motion.div>
+
       </section>
     </PageTransition>
   );

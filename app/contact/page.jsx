@@ -79,7 +79,7 @@ export default function ContactPage() {
     <PageTransition>
       <section className="min-h-screen flex flex-col items-center justify-center px-6 py-12">
         {/* Contact Form Popup */}
-        {showForm && (
+       {showForm && (
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -87,124 +87,92 @@ export default function ContactPage() {
             onClick={() => !isSubmitting && setShowForm(false)}
           >
             <motion.div
-              initial={{ scale: 0.9, opacity: 0 }}
+              initial={{ scale: 0.95, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
-              className="bg-[#0e1821] border border-[#7ee7f9] rounded-2xl p-6 max-w-md w-full max-h-[90vh] overflow-y-auto"
+              className="bg-[#0e1821] border border-[#7ee7f9] rounded-2xl p-6 max-w-md w-full"
               onClick={(e) => e.stopPropagation()}
             >
-              <div className="text-center mb-6">
-                <div className="text-4xl mb-4">📧</div>
-                <h3 className="text-2xl font-bold text-white mb-2">
-                  Send Me a Message
-                </h3>
-                <p className="text-gray-300">
-                  Fill out the form below and I&apos;ll get back to you soon!
-                </p>
-              </div>
-
               {submitStatus === "success" ? (
-                <div className="text-center py-8">
-                  <div className="text-6xl mb-4">✅</div>
-                  <h4 className="text-xl font-bold text-[#7ee7f9] mb-2">Message Sent!</h4>
-                  <p className="text-gray-300">Thank you! Your message has been delivered directly to my inbox.</p>
+                <div className="text-center py-10">
+                  <div className="text-5xl mb-4">✅</div>
+                  <h3 className="text-xl font-bold text-[#7ee7f9] mb-2">
+                    Message Sent Successfully
+                  </h3>
+                  <p className="text-gray-300 text-sm">
+                    Thank you for reaching out. I’ll review your message and respond with next steps.
+                  </p>
                 </div>
               ) : (
-                <form onSubmit={handleFormSubmit} className="space-y-4">
-                  <div>
-                    <label className="block text-gray-300 text-sm font-medium mb-2">
-                      Your Name *
-                    </label>
+                <>
+                  <div className="text-center mb-6">
+                    <h3 className="text-2xl font-bold text-white mb-2">
+                      Project Inquiry
+                    </h3>
+                    <p className="text-gray-300 text-sm">
+                      Share a brief overview of your project and goals.
+                    </p>
+                  </div>
+
+                  <form onSubmit={handleFormSubmit} className="space-y-4">
                     <input
                       type="text"
                       name="name"
-                      placeholder="Enter your name"
+                      placeholder="Your name"
                       value={formData.name}
                       onChange={handleInputChange}
-                      className="w-full bg-gray-800 border border-gray-700 rounded-lg px-4 py-3 text-white placeholder-gray-400 focus:outline-none focus:border-[#7ee7f9] transition-colors"
                       required
                       disabled={isSubmitting}
+                      className="w-full bg-gray-800 border border-gray-700 rounded-lg px-4 py-3 text-white"
                     />
-                  </div>
 
-                  <div>
-                    <label className="block text-gray-300 text-sm font-medium mb-2">
-                      Your Email *
-                    </label>
                     <input
                       type="email"
                       name="email"
-                      placeholder="Enter your email"
+                      placeholder="Your email address"
                       value={formData.email}
                       onChange={handleInputChange}
-                      className="w-full bg-gray-800 border border-gray-700 rounded-lg px-4 py-3 text-white placeholder-gray-400 focus:outline-none focus:border-[#7ee7f9] transition-colors"
                       required
                       disabled={isSubmitting}
+                      className="w-full bg-gray-800 border border-gray-700 rounded-lg px-4 py-3 text-white"
                     />
-                  </div>
 
-                  <div>
-                    <label className="block text-gray-300 text-sm font-medium mb-2">
-                      Subject *
-                    </label>
                     <input
                       type="text"
                       name="subject"
-                      placeholder="What's this about?"
+                      placeholder="Project type or inquiry"
                       value={formData.subject}
                       onChange={handleInputChange}
-                      className="w-full bg-gray-800 border border-gray-700 rounded-lg px-4 py-3 text-white placeholder-gray-400 focus:outline-none focus:border-[#7ee7f9] transition-colors"
                       required
                       disabled={isSubmitting}
+                      className="w-full bg-gray-800 border border-gray-700 rounded-lg px-4 py-3 text-white"
                     />
-                  </div>
 
-                  <div>
-                    <label className="block text-gray-300 text-sm font-medium mb-2">
-                      Message *
-                    </label>
                     <textarea
                       name="message"
-                      placeholder="Tell me about your project or inquiry..."
+                      placeholder="Briefly describe your goals, timeline, or requirements"
+                      rows="5"
                       value={formData.message}
                       onChange={handleInputChange}
-                      rows="5"
-                      className="w-full bg-gray-800 border border-gray-700 rounded-lg px-4 py-3 text-white placeholder-gray-400 focus:outline-none focus:border-[#7ee7f9] transition-colors resize-none"
                       required
                       disabled={isSubmitting}
+                      className="w-full bg-gray-800 border border-gray-700 rounded-lg px-4 py-3 text-white resize-none"
                     />
-                  </div>
 
-                  <div className="flex gap-4 pt-4">
-                    <button
-                      type="button"
-                      onClick={() => setShowForm(false)}
-                      disabled={isSubmitting}
-                      className="flex-1 bg-gray-600 text-white py-3 rounded-lg font-semibold hover:bg-gray-700 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
-                    >
-                      Cancel
-                    </button>
                     <button
                       type="submit"
                       disabled={isSubmitting}
-                      className="flex-1 bg-[#7ee7f9] text-gray-900 py-3 rounded-lg font-semibold hover:bg-[#68d8eb] transition-colors disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2"
+                      className="w-full bg-[#7ee7f9] text-gray-900 py-3 rounded-lg font-semibold"
                     >
-                      {isSubmitting ? (
-                        <>
-                          <div className="w-4 h-4 border-2 border-gray-900 border-t-transparent rounded-full animate-spin"></div>
-                          Sending...
-                        </>
-                      ) : (
-                        "Send Message"
-                      )}
+                      {isSubmitting ? "Sending..." : "Submit Inquiry"}
                     </button>
-                  </div>
-                </form>
-              )}
+                  </form>
 
-              {submitStatus === "error" && (
-                <div className="mt-4 p-3 bg-red-500/20 border border-red-500 rounded-lg text-red-300 text-sm text-center">
-                  Failed to send message. Please try again or contact me directly via email.
-                </div>
+                  {submitStatus === "error" && (
+                    <p className="mt-4 text-sm text-red-400 text-center">
+                      Something went wrong. Please try again or contact me directly.
+                    </p>
+                  )}
+                </>
               )}
             </motion.div>
           </motion.div>
@@ -218,15 +186,15 @@ export default function ContactPage() {
           transition={{ duration: 0.8 }}
         >
           <h1 className="text-4xl md:text-6xl font-bold mb-6">
-            Let&apos;s Build <span className="text-[#7ee7f9]">Together</span>
+            Let’s Discuss Your <span className="text-[#7ee7f9]">Project</span>
           </h1>
-          <p className="text-lg text-gray-300 leading-relaxed mb-6">
-            Welcome to <span className="text-[#7ee7f9] font-semibold">Maryann&apos;s World</span>, a developer who believes that great technology 
-            should solve real problems. Whether you&apos;re looking for a collaborator, need help with a project, 
-            or just want to talk tech, I&apos;d love to hear from you.
+          <p className="text-gray-300 text-lg leading-relaxed">
+            I work with individuals and businesses looking to build reliable,
+            scalable web systems. If you have a project in mind and want it done
+            properly, you’re in the right place.
           </p>
           <p className="text-gray-400">
-            I typically respond within a few hours - let&apos;s create something amazing!
+            Responses are typically within business hours.
           </p>
         </motion.div>
 

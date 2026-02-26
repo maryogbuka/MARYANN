@@ -15,16 +15,16 @@ export default function AboutPage() {
           className="text-center mb-20"
         >
           <h1 className="text-5xl md:text-7xl font-bold mb-6">
-            Hi, I&apos;m <span className="text-[#7ee7f9]">Maryann</span>
+            <span className="text-[#7ee7f9]">Full Stack Developer & Systems Strategist</span>
           </h1>
           <p className="text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto">
-            I bridge the gap between <span className="text-[#7ee7f9]">elegant code</span> and{" "}
-            <span className="text-[#7ee7f9]">robust systems</span>.
+            I help businesses <span className="text-[#7ee7f9]">avoid fragile systems</span> by building websites and applications that are 
+            <span className="text-[#7ee7f9]"> secure, scalable, and built for real-world usage</span>.
           </p>
         </motion.div>
 
         <div className="flex flex-col lg:flex-row gap-12 items-center">
-          {/* --- Story Text --- */}
+          {/* --- Journey Section --- */}
           <motion.div
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
@@ -34,26 +34,23 @@ export default function AboutPage() {
             <h2 className="text-3xl font-bold mb-4">My Journey</h2>
             
             <p className="text-lg text-gray-300 leading-relaxed">
-              For almost <span className="text-[#7ee7f9] font-semibold">three years</span>, I&apos;ve been working at the intersection of user experience and technical infrastructure.
-              Unlike many developers who only see the frontend, I understand what happens <span className="text-[#7ee7f9]">under the hood</span>.
+              For nearly <span className="text-[#7ee7f9] font-semibold">three years</span>, I’ve worked at the intersection of user experience and technical infrastructure. 
+              I don’t just build interfaces, I ensure they <span className="text-[#7ee7f9]">perform reliably in real-world environments</span>.
             </p>
 
             <p className="text-lg text-gray-300 leading-relaxed">
-              My IT Support background gives me a unique superpower: I build applications with a 
-              <span className="text-[#7ee7f9]"> deep understanding of how they&apos;ll perform in real-world environments</span>. 
-              From server configurations to network troubleshooting, I see the full picture.
+              My background in IT Support means I can anticipate <span className="text-[#7ee7f9]">system vulnerabilities</span>, optimize deployments, and troubleshoot before small issues become costly problems.
             </p>
 
             <p className="text-lg text-gray-300 leading-relaxed">
-              This means I don&apos;t just create <span className="text-[#7feb9d]">beautiful interfaces</span> I build{" "}
-              <span className="text-[#7feb9d]">resilient, maintainable systems</span> that actually work when they reach users.
+              The result? I create not just <span className="text-[#7feb9d]">beautiful, responsive interfaces</span>, but <span className="text-[#7feb9d]">robust, maintainable systems</span> that truly support business growth.
             </p>
 
             {/* --- Mini Project Showcase --- */}
             <div className="mt-8 p-6 bg-[#0e1821] rounded-2xl border border-gray-800">
               <h3 className="text-xl font-semibold mb-3 text-[#7ee7f9]">A Glimpse of My Work</h3>
               <p className="text-gray-300 mb-4">
-                While my full portfolio has more details, here&apos;s a project that represents my approach:
+                Here’s a project that highlights my approach:
               </p>
               
               <div className="space-y-4">
@@ -62,8 +59,7 @@ export default function AboutPage() {
                   <div>
                     <h4 className="font-semibold text-white">Nigerian Food Ordering Platform</h4>
                     <p className="text-sm text-gray-400">
-                      Built with real-world usability in mind then integrated Email API for orders that 
-                      actually reach businesses instantly.
+                      Developed for real-world usability, integrating Email APIs to ensure orders reach businesses instantly while maintaining secure, scalable backend systems.
                     </p>
                   </div>
                 </div>
@@ -80,7 +76,7 @@ export default function AboutPage() {
             </div>
           </motion.div>
 
-          {/* --- Skills & Expertise --- */}
+          {/* --- Expertise Section --- */}
           <motion.div
             initial={{ opacity: 0, x: 20 }}
             animate={{ opacity: 1, x: 0 }}
@@ -100,13 +96,11 @@ export default function AboutPage() {
                     Frontend Development
                   </h4>
                   <p className="text-gray-300 text-sm leading-relaxed mb-2">
-                    Creating responsive, accessible web applications with modern tools.
+                    Responsive, accessible web applications built with modern tools that prioritize user experience.
                   </p>
                   <div className="flex flex-wrap gap-2">
-                    {['React', 'Next.js', 'TypeScript', 'Tailwind CSS', 'Framer Motion'].map((skill) => (
-                      <span key={skill} className="px-3 py-1 bg-gray-800 text-gray-300 rounded-full text-sm">
-                        {skill}
-                      </span>
+                    {['React', 'Next.js', 'TypeScript', 'Tailwind CSS', 'Framer Motion'].map(skill => (
+                      <span key={skill} className="px-3 py-1 bg-gray-800 text-gray-300 rounded-full text-sm">{skill}</span>
                     ))}
                   </div>
                 </div>
@@ -118,13 +112,11 @@ export default function AboutPage() {
                     IT & Systems Support
                   </h4>
                   <p className="text-gray-300 text-sm leading-relaxed mb-2">
-                    Ensuring digital systems run smoothly and efficiently.
+                    Ensuring digital systems operate smoothly, securely, and efficiently to support business operations.
                   </p>
                   <div className="flex flex-wrap gap-2">
-                    {['Application Deployment', 'Server Configuration', 'Network Troubleshooting', 'System Monitoring', 'Hardware Setup'].map((skill) => (
-                      <span key={skill} className="px-3 py-1 bg-gray-800 text-gray-300 rounded-full text-sm">
-                        {skill}
-                      </span>
+                    {['Application Deployment', 'Server Configuration', 'Network Troubleshooting', 'System Monitoring', 'Hardware Setup'].map(skill => (
+                      <span key={skill} className="px-3 py-1 bg-gray-800 text-gray-300 rounded-full text-sm">{skill}</span>
                     ))}
                   </div>
                 </div>
@@ -136,23 +128,21 @@ export default function AboutPage() {
                     Cloud & Infrastructure
                   </h4>
                   <div className="flex flex-wrap gap-2">
-                    {['Microsoft 365', 'DNS Management', 'License Management', 'Email Systems', 'User Provisioning'].map((tool) => (
-                      <span key={tool} className="px-3 py-1 bg-gray-800 text-gray-300 rounded-full text-sm">
-                        {tool}
-                      </span>
+                    {['Microsoft 365', 'DNS Management', 'License Management', 'Email Systems', 'User Provisioning'].map(tool => (
+                      <span key={tool} className="px-3 py-1 bg-gray-800 text-gray-300 rounded-full text-sm">{tool}</span>
                     ))}
                   </div>
                 </div>
+
+                {/* Tools & Platforms */}
                 <div>
                   <h4 className="text-lg font-semibold text-white mb-3 flex items-center gap-2">
                     <span className="w-2 h-2 bg-[#7ee7f9] rounded-full"></span>
                     Tools & Platforms
                   </h4>
                   <div className="flex flex-wrap gap-2">
-                    {['Git', 'GitHub', 'Vercel', 'Netlify', 'Resend', 'Brevo' , 'Anydesk' , 'Microsoft 365' , 'VScode' , 'Teamviewer' , 'Cpanel' , 'Active Directory'].map((tool) => (
-                      <span key={tool} className="px-3 py-1 bg-gray-800 text-gray-300 rounded-full text-sm">
-                        {tool}
-                      </span>
+                    {['Git', 'GitHub', 'Vercel', 'Netlify', 'Resend', 'Brevo', 'Anydesk', 'Microsoft 365', 'VScode', 'Teamviewer', 'Cpanel', 'Active Directory'].map(tool => (
+                      <span key={tool} className="px-3 py-1 bg-gray-800 text-gray-300 rounded-full text-sm">{tool}</span>
                     ))}
                   </div>
                 </div>
@@ -161,7 +151,7 @@ export default function AboutPage() {
           </motion.div>
         </div>
 
-        {/* --- IT Problem-Solving Section --- */}
+        {/* --- Problem Solving Section --- */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -169,61 +159,44 @@ export default function AboutPage() {
           className="mt-16"
         >
           <h3 className="text-3xl font-semibold mb-10 text-[#7ee7f9] text-center">
-            Beyond Code: Solving Real Infrastructure Challenges
+            Beyond Code: Solving Real Business Challenges
           </h3>
           
           <div className="grid md:grid-cols-2 gap-6 mb-8">
-            {/* Network Crisis Story */}
+            {/* Network Story */}
             <div className="bg-[#0e1821] p-6 rounded-2xl border border-gray-800">
               <div className="flex items-center gap-3 mb-4">
                 <div className="w-3 h-3 bg-[#7ee7f9] rounded-full"></div>
                 <h4 className="text-xl font-semibold text-white">Network Infrastructure Crisis</h4>
               </div>
               <p className="text-gray-300 text-sm leading-relaxed mb-4">
-                Resolved a major organization-wide network outage by identifying firewall misconfigurations 
-                that wasn&apos;t ISP-related. Systematically isolated the issue and restored full connectivity, 
-                minimizing business disruption during critical operations.
+                Prevented operational downtime by resolving firewall misconfigurations, restoring connectivity, and protecting business continuity during critical operations.
               </p>
               <div className="flex flex-wrap gap-2">
-                <span className="px-3 py-1 bg-gray-800 text-gray-300 rounded-full text-sm">
-                  Firewall Configuration
-                </span>
-                <span className="px-3 py-1 bg-gray-800 text-gray-300 rounded-full text-sm">
-                  Network Troubleshooting
-                </span>
-                <span className="px-3 py-1 bg-gray-800 text-gray-300 rounded-full text-sm">
-                  Crisis Management
-                </span>
+                {['Firewall Configuration','Network Troubleshooting','Crisis Management'].map(tag => (
+                  <span key={tag} className="px-3 py-1 bg-gray-800 text-gray-300 rounded-full text-sm">{tag}</span>
+                ))}
               </div>
             </div>
 
-            {/* BankOne Deployment Story */}
+            {/* Deployment Story */}
             <div className="bg-[#0e1821] p-6 rounded-2xl border border-gray-800">
               <div className="flex items-center gap-3 mb-4">
                 <div className="w-3 h-3 bg-[#7ee7f9] rounded-full"></div>
                 <h4 className="text-xl font-semibold text-white">BankOne Software Deployment</h4>
               </div>
               <p className="text-gray-300 text-sm leading-relaxed mb-4">
-                Solved critical application deployment issues during BankOne integration by identifying 
-                permission conflicts between default admin accounts and user profiles. Implemented a 
-                strategic solution that maintained security while enabling successful application 
-                execution across all user systems.
+                Resolved deployment issues by addressing permission conflicts, enabling secure, smooth operation across all systems.
               </p>
               <div className="flex flex-wrap gap-2">
-                <span className="px-3 py-1 bg-gray-800 text-gray-300 rounded-full text-sm">
-                  Application Deployment
-                </span>
-                <span className="px-3 py-1 bg-gray-800 text-gray-300 rounded-full text-sm">
-                  User Permissions
-                </span>
-                <span className="px-3 py-1 bg-gray-800 text-gray-300 rounded-full text-sm">
-                  Security Configuration
-                </span>
+                {['Application Deployment','User Permissions','Security Configuration'].map(tag => (
+                  <span key={tag} className="px-3 py-1 bg-gray-800 text-gray-300 rounded-full text-sm">{tag}</span>
+                ))}
               </div>
             </div>
           </div>
 
-          {/* Microsoft 365 Story - Full Width */}
+          {/* Microsoft 365 Story */}
           <div className="bg-[#0e1821] p-6 rounded-2xl border border-gray-800 mb-8">
             <div className="flex items-center gap-3 mb-4">
               <div className="w-3 h-3 bg-[#7ee7f9] rounded-full"></div>
@@ -232,40 +205,22 @@ export default function AboutPage() {
             <div className="grid md:grid-cols-2 gap-6">
               <div>
                 <p className="text-gray-300 text-sm leading-relaxed mb-4">
-                  Spearheaded the organization&apos;s transition to Microsoft 365, starting with 7 user licenses 
-                  and scaling as needed. Managed the complete deployment lifecycle including DNS record 
-                  configuration for proper domain synchronization, license procurement and management, 
-                  and user account provisioning with official corporate emails.
+                  Led migration to Microsoft 365, managing licenses, DNS configuration, and user provisioning for seamless communication and scalability.
                 </p>
                 <div className="flex flex-wrap gap-2">
-                  <span className="px-3 py-1 bg-gray-800 text-gray-300 rounded-full text-sm">
-                    Cloud Migration
-                  </span>
-                  <span className="px-3 py-1 bg-gray-800 text-gray-300 rounded-full text-sm">
-                    DNS Configuration
-                  </span>
-                  <span className="px-3 py-1 bg-gray-800 text-gray-300 rounded-full text-sm">
-                    License Management
-                  </span>
+                  {['Cloud Migration','DNS Configuration','License Management'].map(tag => (
+                    <span key={tag} className="px-3 py-1 bg-gray-800 text-gray-300 rounded-full text-sm">{tag}</span>
+                  ))}
                 </div>
               </div>
               <div>
                 <p className="text-gray-300 text-sm leading-relaxed mb-4">
-                  Handled budgeting and payments for Microsoft 365 subscriptions while continuously 
-                  monitoring usage to optimize costs. Established efficient user onboarding processes 
-                  and maintained the entire email infrastructure, ensuring reliable business 
-                  communication across the organization.
+                  Optimized subscription costs, streamlined onboarding, and maintained reliable business email infrastructure.
                 </p>
                 <div className="flex flex-wrap gap-2">
-                  <span className="px-3 py-1 bg-gray-800 text-gray-300 rounded-full text-sm">
-                    User Provisioning
-                  </span>
-                  <span className="px-3 py-1 bg-gray-800 text-gray-300 rounded-full text-sm">
-                    Budget Management
-                  </span>
-                  <span className="px-3 py-1 bg-gray-800 text-gray-300 rounded-full text-sm">
-                    Email Systems
-                  </span>
+                  {['User Provisioning','Budget Management','Email Systems'].map(tag => (
+                    <span key={tag} className="px-3 py-1 bg-gray-800 text-gray-300 rounded-full text-sm">{tag}</span>
+                  ))}
                 </div>
               </div>
             </div>
@@ -275,24 +230,12 @@ export default function AboutPage() {
           <div className="p-6 bg-[#0e1821] rounded-2xl border border-gray-800">
             <h4 className="text-lg font-semibold text-white mb-3 text-center">My Problem-Solving Philosophy</h4>
             <p className="text-gray-300 text-sm leading-relaxed text-center max-w-3xl mx-auto">
-              I approach technical challenges with a systematic methodology: understand the environment constraints, 
-              identify root causes rather than symptoms, and implement solutions that balance security with functionality. 
-              Whether it&apos;s network infrastructure, software deployment, or cloud migration, I find the intersection 
-              where technology actually serves the people using it.
+              I approach challenges systematically: understanding environment constraints, identifying root causes, and implementing solutions that balance security, functionality, and business continuity.
             </p>
             <div className="flex flex-wrap gap-2 justify-center mt-4">
-              <span className="px-3 py-1 bg-gray-800 text-gray-300 rounded-full text-sm">
-                End-to-End Ownership
-              </span>
-              <span className="px-3 py-1 bg-gray-800 text-gray-300 rounded-full text-sm">
-                Systematic Troubleshooting
-              </span>
-              <span className="px-3 py-1 bg-gray-800 text-gray-300 rounded-full text-sm">
-                User-Centric Solutions
-              </span>
-              <span className="px-3 py-1 bg-gray-800 text-gray-300 rounded-full text-sm">
-                Infrastructure Planning
-              </span>
+              {['End-to-End Ownership','Systematic Troubleshooting','User-Centric Solutions','Infrastructure Planning'].map(tag => (
+                <span key={tag} className="px-3 py-1 bg-gray-800 text-gray-300 rounded-full text-sm">{tag}</span>
+              ))}
             </div>
           </div>
         </motion.div>
