@@ -205,31 +205,14 @@ export default function ContactPage() {
           animate={{ opacity: 1 }}
           transition={{ delay: 0.3, duration: 0.8 }}
         >
-          {/* Email 1 */}
-          <motion.div
-            whileHover={{ scale: 1.05, y: -5 }}
-            className="bg-[#0e1821] p-6 rounded-2xl border border-gray-800 text-center hover:border-[#7ee7f9] transition-all"
-          >
-            <div className="text-2xl mb-3">📧</div>
-            <h3 className="text-lg font-semibold mb-2 text-[#7ee7f9]">Primary Email</h3>
-            <p className="text-gray-300 text-sm mb-4">For projects & collaborations</p>
-            <div 
-              onClick={() => copyToClipboard("mhycienth58@gmail.com")}
-              className="text-white hover:text-[#7ee7f9] transition-colors break-all cursor-pointer select-all"
-            >
-              mhycienth58@gmail.com
-            </div>
-            <p className="text-gray-400 text-xs mt-2">(Click to copy)</p>
-          </motion.div>
-
-          {/* Email 2 */}
+          {/* Email */}
           <motion.div
             whileHover={{ scale: 1.05, y: -5 }}
             className="bg-[#0e1821] p-6 rounded-2xl border border-gray-800 text-center hover:border-[#7ee7f9] transition-all"
           >
             <div className="text-2xl mb-3">💼</div>
             <h3 className="text-lg font-semibold mb-2 text-[#7ee7f9]">Work Email</h3>
-            <p className="text-gray-300 text-sm mb-4">For professional inquiries</p>
+            <p className="text-gray-300 text-sm mb-4">For projects, collaborations, inquiries</p>
             <div 
               onClick={() => copyToClipboard("mhycienth57@gmail.com")}
               className="text-white hover:text-[#7ee7f9] transition-colors break-all cursor-pointer select-all"

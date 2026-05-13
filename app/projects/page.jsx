@@ -25,7 +25,7 @@ const projects = [
       "Real-time order processing",
       "Most-ordered meals and performance insights"
     ],
-    role: "Full Stack Developer & UI Systems Designer"
+    role: "Restaurant Management System"
   },
   {
     title: "Modern Standard Insurance Brokers – Corporate Website",
@@ -48,7 +48,7 @@ const projects = [
       "Lead capture and inquiry forms",
       "Professional brand presentation"
     ],
-    role: "Frontend Developer"
+    role: "Insurance Brokerage Firm"
   },
   {
     title: "POS Application & Deployment System",
@@ -71,7 +71,7 @@ const projects = [
       "Client data validation and processing",
       "Mobile-friendly interface"
     ],
-    role: "Full Stack Developer"
+    role: "Pos Deployment System"
   },
   {
     title: "Still Living – Fashion E-Commerce Platform",
@@ -95,7 +95,7 @@ const projects = [
       "Order creation and verification",
       "Mobile-optimized storefront"
     ],
-    role: "Full Stack Developer"
+    role: "Fashion E-Commerce Platform"
   },
   {
     title: "Jesus Club Tour – Event Ticketing Platform",
@@ -119,10 +119,57 @@ const projects = [
       "Cart-based ticket selection",
       "Automated ticket generation after payment"
     ],
-    role: "Full Stack Developer"
-  }
-];
+    role: "Event Ticketing Platform"
+  },
 
+  {
+  title: "OlivePay – Fintech Payment Processing Platform",
+  description:
+    "A comprehensive fintech payment processing platform designed to facilitate seamless transactions, merchant onboarding, and digital payment solutions for businesses of all sizes.",
+  tech: [
+    "Next.js",
+    "React",
+    "Tailwind CSS",
+    "JavaScript",
+
+  ],
+  image: "/olivepay.png",
+  liveLink: "https://www.olivepayment.com",
+  github: "https://github.com/maryogbuka/olivepay",
+  features: [
+    "Secure payment processing and transaction management",
+    "Merchant dashboard and onboarding system",
+    "Multi-channel payment support",
+    "Real-time transaction monitoring",
+    "Comprehensive financial reporting"
+  ],
+  role: "Fintech Website"
+},
+{
+  title: "OliveMFB – Digital Microfinance Banking Platform",
+  description:
+    "A modern digital microfinance banking platform that provides accessible financial services, account management, and secure transaction processing for customers seeking reliable banking solutions.",
+  tech: [
+    "Next.js",
+    "React",
+    "Tailwind CSS",
+    "JavaScript",
+    "Vercel Deployment"
+  ],
+  image: "/olivemfb.png",
+  liveLink: "https://olivemfb.vercel.app",
+  github: "https://github.com/maryogbuka/olivemfb",
+  features: [
+    "Customer account opening and verification",
+    "Digital transaction processing",
+    "Loan application and management",
+    "Secure user authentication",
+    "Mobile-responsive banking interface"
+  ],
+  role: "Microfinance Banking Platform"
+}
+
+];
 export default function ProjectsPage() {
   return (
     <PageTransition>
@@ -140,7 +187,7 @@ export default function ProjectsPage() {
           </h1>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
             These are real, deployed systems built to solve real business
-            challenges — from payments and automation to scalability and user
+            challenges from payments and automation to scalability and user
             experience.
           </p>
         </motion.div>
