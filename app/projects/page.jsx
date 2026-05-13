@@ -17,7 +17,7 @@ const projects = [
     ],
     image: "/ozis.png",
     liveLink: "https://foodmill.vercel.app",
-    github: "https://github.com/maryogbuka/restaurant",
+    github: "null",
     features: [
       "Multi-payment support (Card, USSD, Bank Transfer)",
       "Restaurant admin dashboard with sales analytics",
@@ -40,7 +40,7 @@ const projects = [
     ],
     image: "/msib.png",
     liveLink: "https://msibltd.com",
-    github: "https://github.com/maryogbuka/msib",
+    github: "null",
     features: [
       "Clear service presentation for insurance offerings",
       "Email automation for client inquiries",
@@ -63,7 +63,7 @@ const projects = [
     ],
     image: "/pos.png",
     liveLink: "https://oliveposforms.vercel.app",
-    github: "https://github.com/maryogbuka/pos_deployment_form",
+    github: "null",
     features: [
       "Dynamic POS request forms",
       "Automated PDF document generation",
@@ -87,7 +87,7 @@ const projects = [
     ],
     image: "/ozybrand.png",
     liveLink: "https://ozybrand.vercel.app",
-    github: "https://github.com/maryogbuka/brand",
+    github: "null",
     features: [
       "Product catalog and collections display",
       "Secure payments via Paystack and Flutterwave",
@@ -111,7 +111,7 @@ const projects = [
     ],
     image: "/clubtour.png",
     liveLink: "https://lloydconcert.vercel.app",
-    github: "https://github.com/maryogbuka/ConcertTicket",
+    github: "null",
     features: [
       "Event listings and ticket tiers",
       "Free and paid ticket workflows",
@@ -135,7 +135,7 @@ const projects = [
   ],
   image: "/olivepay.png",
   liveLink: "https://www.olivepayment.com",
-  github: "https://github.com/maryogbuka/olivepay",
+  github: "null",
   features: [
     "Secure payment processing and transaction management",
     "Merchant dashboard and onboarding system",
@@ -158,7 +158,7 @@ const projects = [
   ],
   image: "/olivemfb.png",
   liveLink: "https://olivemfb.vercel.app",
-  github: "https://github.com/maryogbuka/olivemfb",
+  github: "null",
   features: [
     "Customer account opening and verification",
     "Digital transaction processing",
@@ -263,7 +263,7 @@ export default function ProjectsPage() {
                   </div>
                 </div>
 
-                <div className="flex gap-4 pt-4">
+                <div className="flex gap-4 pt-4 items-center justify-center text-center">
                   <motion.a
                     href={project.liveLink}
                     target="_blank"
@@ -272,15 +272,6 @@ export default function ProjectsPage() {
                     className="flex-1 bg-[#7ee7f9] text-gray-900 font-semibold px-6 py-3 rounded-lg text-center"
                   >
                     View Live System
-                  </motion.a>
-                  <motion.a
-                    href={project.github}
-                    target="_blank"
-                    whileHover={{ scale: 1.05 }}
-                    whileTap={{ scale: 0.95 }}
-                    className="flex-1 border border-[#7ee7f9] text-[#7ee7f9] font-semibold px-6 py-3 rounded-lg text-center"
-                  >
-                    View Code
                   </motion.a>
                 </div>
               </div>
