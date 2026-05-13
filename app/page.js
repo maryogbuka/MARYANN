@@ -48,7 +48,7 @@ export default function HomePage() {
         >
           {[
             { number: "3+", label: "Years Building Production Systems" },
-            { number: "10+", label: "Completed Web Solutions" },
+            { number: "5+", label: "Completed Web Solutions" },
             { number: "End-to-End", label: "Ownership & Support" },
           ].map((stat, index) => (
             <div key={index} className="text-center">
