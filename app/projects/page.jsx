@@ -292,7 +292,7 @@ export default function ProjectsPage() {
           <p className="text-gray-300 max-w-2xl mx-auto mb-6">
             If you’re looking to build a reliable web platform  whether it’s
             e-commerce, internal systems, or customer-facing applications
-            we can design and build a solution that fits your business goals.
+            I design and build solution that fits your business goals.
           </p>
           <motion.a
             href="/contact"

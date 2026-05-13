@@ -323,7 +323,7 @@ export default function ContactPage() {
           <h3 className="text-lg font-semibold mb-3 text-[#7ee7f9]">A Little About My Approach</h3>
           <p className="text-gray-300 text-sm leading-relaxed">
             I believe the best projects start with great communication. Whether you need a frontend developer, 
-            IT support specialist, or someone who understands both worlds, I&apos;m here to help bring your ideas to life. 
+            IT support Professional, or someone who understands both worlds, I&apos;m here to help bring your ideas to life. 
             Let&apos;s discuss how we can work together to create solutions that are not just functional, but exceptional.
           </p>
         </motion.div>
